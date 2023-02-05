@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- All of the meta information, fonts and css stylesheets used-->
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Daniel Zielinski">
+    <meta name="description" content="Games and technology news website">
+    <meta name="keywords" content="Games, Tech, technology, news, JS, CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameTech Homepage</title>
+    
+    <!-- fonts are used from the: https://fonts.google.com -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS stylesheets -->
+    <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">  <!-- bootstrap -->
+    <link href="assets/css/icofont/icofont.min.css" rel="stylesheet">  <!-- IcoFont icons--> 
+    <link href="assets/css/style.css" rel="stylesheet">  <!-- my css styling -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS library -->
+</head>
+
+<body>
+    <!-- Progress bar that appears at the top of the page -->
+    <!-- Progress bar code is also in the script.js and style.css - more info there-->
+    <div class="progressBar"></div>
+    
+    <!-- Header -->
+    <!-- *** header code was greatly modified and changed compared to the template - more in the style.css in the header section-->
+    <!-- -->
+    <!-- * header-scrolled-contact, mobile-nav-toggle-scrolled-contact, header-fixed-pos: responsive behaviour of the header (these classes are written by me) - more info in the style.css -->
+    <!-- * container-fluid - maintains header width (style.css) -->
+    <!-- * align-center, display-flex - pretty self-explanatory classes (style.css) -->
+    <!-- * m-rightAuto - margin-right: auto (style.css) -->
+    <header id="header" class="header-fixed-pos">
+        <div class="container-fluid display-flex align-center">
+            <div class="logo m-rightAuto"> <!-- logo class was from the template (modified) - more info in the style.css -->
+                <h1><a href="index.html">GAMETECH</a></h1> <!-- logo as a hyperlink to the main page -->
+            </div>
+            <!-- Hyperlinks to other sites -->
+            <!-- nav tag classes names remained the same. Only nav-manu CSS was changed -->
+            <!-- * nav-menu - navigation styling etc. More in style.css -->
+            <!-- * d-none - display: none (bootstrap) -->
+            <!-- * d-lg-block - display: block (bootstrap) -->
+            <nav class="nav-menu d-none d-lg-block"> 
+                <ul>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="tech.html">Tech</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Background and welcome text -->
+    <!-- This code uses template's modified CSS and changed names -->
+    <section class="welcome"> <!-- background -->
+        <div class="container"> <!-- text on the background (style.css) -->
+            <h2 class="big">Welcome to GameTech</h2> <!-- making this h2 header bigger (style.css) -->
+            <h2>Your daily games and technology news</h2>
+        </div>
+    </section>
+
+    <!-- Text above section 1 -->
+    <!-- *** This code is written by myself *** -->
+    <!-- -->
+    <!-- * section-color-white - section color (white) (style.css) -->
+    <!-- * news-section - text positioning (style.css) -->
+    <!-- * container-fluid - maintains header width (style.css) -->
+    <section class="section-color-white news-section">
+        <div class="container-fluid">
+            <!-- bootstrap responsive flexbox (row and col classes) -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h2 class="head-title">Latest games news</h2> <!-- head title styling (style.css) -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Section 1 - Latest games news -->
+        <!-- *** This code is written by myself *** -->
+        <!-- -->
+        <!-- four images with text (images and text as hyperlinks) with responsive behaviour -->
+        <!-- * section-color-ghostwhite - section color (ghostwhite) (style.css) -->
+        <div class="section-color-ghostwhite">
+            <!-- bootstrap responsive flexbox (row and col classes) -->
+            <!-- * container-fluid - maintains this section width (style.css) -->
+            <!-- * latest-news-img - image styling (style.css) -->
+            <!-- * latest-news-boxes-text - black transparent text box styling (style.css) -->
+            <!-- * latest-news-link - text colour (style.css) -->
+            <div class="row container-fluid">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                    <div class="m-bottom20"> <!-- margin-bottom: 20px (style.css) -->
+                        <div data-aos="fade-down"> <!-- AOS effect -->
+                            <!-- image and text are used as hyperlinks -->
+                            <a href="games.html"><img class="latest-news-img" src="assets/images/homepage/latest-games-news1.jpg" alt="Women with ginger hair looking into the distance"></a> 
+                            <div class="latest-news-boxes-text"> 
+                                <a href="games.html" class="latest-news-link">Horizon II: Forbidden West - coming this year?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- bootstrap responsive flexbox (row and col classes) -->
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">           
+                    <div class="m-bottom20"> <!-- margin-bottom: 20px (style.css) -->
+                        <div data-aos="fade-down"> <!-- AOS effect -->
+                            <!-- image and text are used as hyperlinks -->
+                            <!-- classes are described below the start of this section -->
+                            <a href="games.html"><img class="latest-news-img" src="assets/images/homepage/latest-games-news2.jpg" alt="Big Pokemon Go logo on a dark background"></a>
+                            <div class="latest-news-boxes-text">
+                                <a href="games.html" class="latest-news-link">New league in Pokemon Go is just around the corner!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- bootstrap responsive flexbox (row and col classes) -->
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">           
+                    <div class="m-bottom20"> <!-- margin-bottom: 20px (style.css) -->
+                        <div data-aos="fade-down"> <!-- AOS effect -->
+                            <!-- image and text are used as hyperlinks -->
+                            <!-- classes are described below the start of this section -->
+                            <a href="games.html"><img class="latest-news-img" src="assets/images/homepage/latest-games-news3.jpg" alt="E3 2021 logo with hexagon background"></a>
+                            <div class="latest-news-boxes-text">
+                                <a href="games.html" class="latest-news-link">E3 2021 without live event. How will it look like?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- bootstrap responsive flexbox (row and col classes) -->
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">           
+                    <div class="m-bottom20"> <!-- margin-bottom: 20px (style.css) -->
+                        <div data-aos="fade-down"> <!-- AOS effect -->
+                            <!-- image and text are used as hyperlinks -->
+                            <!-- classes are described below the start of this section -->
+                            <a href="games.html"><img class="latest-news-img" src="assets/images/homepage/latest-games-news4.jpg" alt="Two characters from Cyberpunk 2077 standing and looking forward"></a>
+                            <div class="latest-news-boxes-text">
+                                <a href="games.html" class="latest-news-link">Patch 1.2 for Cyberpunk 2077 is getting a delay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 - Two image carousels (each contains three images) with responsive behaviour   -->
+    <!-- *** This code was copied and modified - some things are decribed here, some in the report.html *** -->
+    <!-- *** All the images and text was implemented by me *** -->
+    <!-- *** Carousel uses Bootstrap classes to function properly *** -->   
+    <!-- -->
+    <!-- bootstrap responsive flexbox (row and col classes) -->
+    <!-- * section-color-white - section color (white) (style.css) -->
+    <!-- * container-fluid - maintains this section width (style.css) -->
+    <!-- * carousel-section - padding-bottom (style.css) -->
+    <section class="section-color-white carousel-section">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- -->
+                <!-- carousel on the left -->
+                <!-- -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="carousel-padding">     
+                        <h2 class="head-title">Technology</h2> <!-- head title styling -->
+                        <!-- * carousel-left - id to help distinguish two carousels. This is also to be able to change the images -->
+                        <!-- * slide - class that makes the image changing smooth (bootstrap) -->
+                        <!-- * carousel - position: relative (bootstrap) -->
+                        <!-- * data-ride="carousel" - images ability to change (bootstrap) -->
+                        <div id="carousel-left" class="carousel slide" data-ride="carousel">
+                            <!-- * carousel-indicators - class to have ability to change the images by clicking small indicators at the bottom (bootstrap) -->
+                            <!--  changed: the name of data-target id, <li> styling -->
+                            <ol class="carousel-indicators"> 
+                                <li data-target="#carousel-left" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-left" data-slide-to="1"></li>
+                                <li data-target="#carousel-left" data-slide-to="2"></li>
+                            </ol>
+                            <!-- * carousel-inner - positioning class (bootstrap)-->
+                            <!-- * carousel-item - indicates that this image is a part of the carousel (bootstrap)-->
+                            <!-- * active - indicates that this image is being displayed first (bootstrap) -->
+                            <!-- * carousel-image - styling of the images (style.css)-->
+                            <!-- * carousel-caption - positioning of the text box (bootstrap with changed styling in style.css)-->
+                            <!-- * margin - margin-bottom (style.css)-->
+                            <!--  deleted: role -->
+                            <div class="carousel-inner"> 
+                                <div class="carousel-item active"> 
+                                    <a href="tech.html"><img class="carousel-image" src="assets/images/homepage/tech1.jpg" alt="RTX 3060 graphics card"></a>
+                                    <div class="carousel-caption">
+                                        <h5 class="margin">RTX 3060 - out of stock before the release?</h5> 
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="tech.html"><img class="carousel-image" src="assets/images/homepage/tech2.jpg" alt="Big Bitcoin on a black/gold background"></a>
+                                    <div class="carousel-caption">
+                                        <h5 class="margin">Bitcoin's 6% price growth</h5> 
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="tech.html"><img class="carousel-image" src="assets/images/homepage/tech3.jpg" alt="iPhone's front facing and back facing sides"></a>
+                                    <div class="carousel-caption">
+                                        <h5 class="margin">iPhone 13 with or without the Touch ID?</h5> 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Left and right arrows, that help to change the image displayed -->
+                            <!-- deleted: role, aria-hidden, sr-only class -->
+                            <!-- -->
+                            <!-- * carousel-control-prev - class that changes the image when clicked (prev) (bootstrap) -->
+                            <!-- * carousel-control-prev-icon - "previous" icon (bootstrap) -->
+                            <!-- * carousel-control-next - class that changes the image when clicked (next) (bootstrap) -->
+                            <!-- * carousel-control-prev-icon - "next" icon (bootstrap) -->
+                            <!-- * sr-only - screenreader class (bootstrap) -->
+                            <a class="carousel-control-prev" href="#carousel-left" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-left" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- -->
+                <!-- carousel on the right -->
+                <!-- -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="carousel-padding">      
+                        <h2 class="head-title">Shop</h2> <!-- head title styling -->
+                        <!-- * carousel-left - id to help distinguish two carousels. This is also to be able to change the images -->
+                        <!-- * slide - class that makes the image changing smooth (bootstrap) -->
+                        <!-- * carousel - position: relative (bootstrap)-->
+                        <!-- * data-ride="carousel" - images ability to change (bootstrap) -->
+                        <div id="carousel-right" class="carousel slide" data-ride="carousel">
+                            <!-- * carousel-indicators - class to have ability to change the images by clicking small indicators at the bottom (bootstrap) -->
+                            <!--  changed: the name of data-target id, <li> styling -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-right" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-right" data-slide-to="1"></li>
+                                <li data-target="#carousel-right" data-slide-to="2"></li>
+                            </ol>
+                            <!-- * carousel-inner - positioning class (bootstrap)-->
+                            <!-- * carousel-item - indicates that this image is a part of the carousel (bootstrap)-->
+                            <!-- * active - indicates that this image is being displayed first (bootstrap) -->
+                            <!-- * carousel-image - styling of the images (style.css)-->
+                            <!-- * carousel-caption - positioning of the text box (bootstrap with changed styling in style.css)-->
+                            <!-- * margin - margin-bottom (style.css)-->
+                            <!--  deleted: role -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="shop.html"><img class="carousel-image" src="assets/images/homepage/shop1.jpg" alt="Razer DeathAdder mouse on and dark mousepad"></a>
+                                    <div class="carousel-caption">
+                                        <h5 class="margin">Gaming</h5> 
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="shop.html"><img class="carousel-image" src="assets/images/homepage/shop2.png" alt="Cup that looks like Minecraft's diamond ore"></a>
+                                    <div class="carousel-caption">
+                                        <h5 class="margin">Gadgets</h5> 
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="shop.html"><img class="carousel-image" src="assets/images/homepage/shop3.png" alt="Black XBOX console with black controller"></a>
+                                    <div class="carousel-caption">
+                                        <h5 class="margin">Consoles</h5> 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Left and right arrows, that help to change the image displayed -->
+                            <!-- deleted: role, aria-hidden, sr-only class -->
+                            <!-- -->
+                            <!-- * carousel-control-prev - class that changes the image when clicked (prev) (bootstrap) -->
+                            <!-- * carousel-control-prev-icon - "previous" icon (bootstrap) -->
+                            <!-- * carousel-control-next - class that changes the image when clicked (next) (bootstrap) -->
+                            <!-- * carousel-control-prev-icon - "next" icon (bootstrap) -->
+                            <!-- * sr-only - screenreader class (bootstrap) -->
+                            <a class="carousel-control-prev" href="#carousel-right" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-right" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>	
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter -->
+    <!-- *** This code was copied and modified - more in the report.html *** -->
+    <!-- -->
+    <!-- * section-color-ghostwhite - section color (ghostwhite) (style.css) -->
+    <!-- * newsletter - padding and text alignment/base class (style.css) -->
+    <!-- * header - newsletter header styling (style.css) -->
+    <!-- * btn - button styling (style.css) -->
+    <section class="section-color-ghostwhite newsletter">
+        <!-- bootstrap responsive flexbox (row and col classes) -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
+                <div class="content"> <!-- maintains this section width (style.css) -->
+                    <div data-aos="fade-right">  <!-- AOS library animation -->
+                        <form>
+                            <!-- headers styling and text-->
+                            <h3 class="newsletter-header">SUBSCRIBE TO OUR NEWSLETTER</h3>
+                            <h6 class="newsletter-header">Stay up to date with our latest news</h6>
+                            <!-- email input field with field's styling -->
+                            <div class="input-group"> <!-- makes button and input field next to each other (bootstrap)-->
+                                <input type="email" class="form-control" placeholder="Write your e-mail here">
+                                <button class="btn" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <!-- This code was greatly modified from the template - only classes names are the same -->
+    <!-- CSS styling was changed as well as whole footer code here -->
+    <!-- -->
+    <!-- * social-links - styling of the buttons (style.css)-->
+    <!-- * footer-bottom - styling of bottom lines of text (style.css)-->
+    <footer>
+        <div class="social-links">
+            <a href="#"><img src="assets/images/icons/twitter.png" alt="Twitter icon" class="social-links-size"></a>
+            <a href="#"><img src="assets/images/icons/facebook.png" alt="Facebook icon" class="social-links-size"></a>
+            <a href="#"><img src="assets/images/icons/instagram.png" alt="Instagram icon" class="social-links-size"></a>
+            <a href="#"><img src="assets/images/icons/whatsapp.png" alt="Whatsapp icon" class="social-links-size"></a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Copyright <b>GameTech</b>. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Back to the top and toggle dark-mode buttons -->
+    <!-- styling classes for both buttons are in the style.css -->
+    <!-- JavaScript code responsible for them to work is in the script.js -->
+    <!-- In both buttons there are IcoFont icons used - more in the report.html -->
+    <a href="#" class="scroll-to-top-button"><i class="icofont-simple-up"></i></a>
+    <a href="#" class="dark-mode-button"><i class="icofont-adjust"></i></a>
+
+    <!-- JavaScript files -->
+    
+    <!-- jQuery files -->
+    <script src="assets/js/jquery/jquery.min.js"></script>
+    <script src="assets/js/jquery/jquery.easing.min.js"></script>
+    <!-- Bootstrap files -->
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>    
+    <script src="assets/js/bootstrap/bootstrap.bundle.js"></script>
+    <!-- AOS (Animate on scroll) library .js file -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    <!-- my JavaScript file -->
+    <script src="assets/js/script.js"></script> 
+</body>
+</html>
